@@ -10,18 +10,19 @@
             margin: 0;
         }
         iframe{
+            transform: scale(0.05);
+            transform-origin: 0 0;
             position:fixed;
             top:0;
             left:0;
             bottom:0;
             right:0;
-            width:100%;
-            height:100%;
+            width:2000%;
+            height:2000%;
             border:none;
             margin:0;
             padding:0;
             overflow:hidden;
-            zoom: 0.01;
         }
     </style>
 </head>
