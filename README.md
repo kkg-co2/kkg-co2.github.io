@@ -10,8 +10,7 @@
             margin: 0;
         }
         iframe{
-            transform: scale(0.1);
-            transform-origin: 0 0;
+            zoom: 0.01;
             position:fixed;
             top:0;
             left:0;
