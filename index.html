@@ -39,7 +39,14 @@
     <iframe src="https://jsfiddle.net/h9scb5to/latest/show" id="frame" frameborder="0"></iframe>
     <div></div>
     <script>
-        window.addEventListener("popstate", function(){location.reload()})
+        window.onpageshow = function(evt) {
+            // If persisted then it is in the page cache, force a reload of the page.
+            if (evt.persisted) {
+                document.body.style.display = "none";
+                location.reload();
+            }
+        };
+
     </script>
 </body>
 </html>
